@@ -20,7 +20,7 @@ if (article) { //checks if article is truthy
     badge.classList.add("color-secondary-text", "type--caption"); //adds CSS classes to the 'badge' element using the classList property (which provides a way to manipulate the classes of an element). .add() is a method to add classes to an element - in this case for styling purposes.
     badge.textContent = `⏱️ ${readingTime} min to read`; //sets the text content of the 'badge' element to display the reading time in minutes
 
-    //support for API reference docs
+    //support for API reference docs.
     const heading = article.querySelector("h1"); //selects the first <h1> element within the <article> and assigns it to the variable 'heading'. The purpose is to capture the element to access the content or manipulate its properties later in the code.
     //support of article docs with date
     const date = article.querySelector("time")?.parentNode; //attempts to select the parent node of <time> within the 'article' and assigns it to the variable 'date'. The '?' optoinal chaining operator is used to handle the case when the <time> element is not found, avoiding potential errors. the epurpose of selecting the parent node of the <item> element is to insert the 'badge' element.
